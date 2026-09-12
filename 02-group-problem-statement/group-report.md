@@ -133,7 +133,13 @@ Không nên build thêm một travel planner tổng quát vì Wanderlog và Mind
 Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
 
 ```text
-[1 Tạo group chat/Google Sheet: Trip members] → [2 Search + input địa điểm: Trip members] → [3 Ước lượng chi phí: Trip members] → [4 Chỉnh sửa + thống nhất lịch trình: Cả nhóm - bottleneck] → [5 Đặt dịch vụ: Trip members] → [6 Tạo quỹ chung (optional): Trip members] → [7 Chia tiền sau chuyến đi: Trip members - bottleneck]
+[1 Tạo group chat/Google Sheet: Trip members] 
+→ [2 Search + input địa điểm: Trip members] 
+→ [3 Ước lượng chi phí: Trip members] 
+→ [4 Chỉnh sửa + thống nhất lịch trình: Cả nhóm - bottleneck] 
+→ [5 Đặt dịch vụ: Trip members] 
+→ [6 Tạo quỹ chung (optional): Trip members] 
+→ [7 Chia tiền sau chuyến đi: Trip members - bottleneck]
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú (handoff? bottleneck?) |
