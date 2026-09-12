@@ -6,8 +6,8 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò trong nhóm (VD: facilitator, workflow, research, writer) |
 |-----|-----------|-------------|---------------------------------------------------------------|
-| 1   | Nguyễn Phúc Huy | 2A202602911 |                                                               |
-| 2   | Tô Anh Đức | 2A202602639 |                                                               |
+| 1   | Nguyễn Phúc Huy | 2A202602911 |   |
+| 2   | Tô Anh Đức | 2A202602639 |   |
 | 3   | Hồ Hoàng Phương Anh | 2A202602460|                                                               |
 | 4   | Lê Văn Việt | 2A202602504 |                                                               |
 | 5   | Ngô Hoàng Thụy Khuê | 2A202603017 |                                                               |
@@ -98,7 +98,7 @@ Tối ưu hoá quá trình lên kế hoạch và quản lý chuyến du lịch.
 
 | Nguồn | Số người / mẫu | Tín hiệu xác nhận (kèm quote nguyên văn) | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 |---|---:|---|---|---|
-| Survey / poll | 9 | 7/9 người gặp khó khăn trong việc quản lý chi tiêu, 6/8 người không dùng ứng dụng hỗ trợ việc lên kế hoạch | 1 người không gặp khó khăn trong việc quản lý chi tiêu, 4/9 người chỉ dành 1-3 tuần để lên kế hoạch |  |
+| Survey / poll | 9 | 7/9 người gặp khó khăn trong việc quản lý chi tiêu, 6/8 người không dùng ứng dụng hỗ trợ việc lên kế hoạch | 1 người không gặp khó khăn trong việc quản lý chi tiêu, 4/9 người chỉ dành 1-3 tuần để lên kế hoạch | Không có |
 
 **Insight sau validation (1-2 câu — pain thật nằm ở đâu):**
 
@@ -109,6 +109,12 @@ Mọi người không biết một ứng dụng nào để lên kế hoạch, v�
 Bằng chứng đính kèm (nếu có): `02-group-problem-statement-survey.png`, `...-interview-notes.md`
 
 ### 4.2. Research giải pháp đã có (ít nhất 2-3 tools/patterns + 1-2 link kiểm được)
+| Nguồn / tool / case | Link | Họ giải quyết bước nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
+|---|---|---|---|---|---|
+| **1. Wanderlog** | [wanderlog.com](https://wanderlog.com) | Lên lịch trình chi tiết, tối ưu tuyến đường trên bản đồ, cộng tác nhóm (chia sẻ quyền sửa), quản lý ngân sách. | **Trực quan:** Tích hợp map mượt, kéo thả địa điểm tự tính thời gian di chuyển.<br><br>**Cộng tác tốt:** Sửa realtime như Google Docs.<br><br>Tính năng chia tiền (Split cost) thực tế. | **Ma sát khởi đầu cao:** Người dùng vẫn phải tự nghĩ xem đi đâu, nhập tay nhiều từ đầu.<br><br>Hơi nặng và phức tạp với người chỉ cần một chuyến đi đơn giản. | |
+| **2. TripIt (by SAP)** | [tripit.com](https://www.tripit.com) | Tổng hợp và quản lý mã đặt chỗ (booking máy bay, khách sạn, tour), tạo timeline cố định. | **Tự động hóa xuất sắc:** Chỉ cần forward email (hoặc cấp quyền đọc email), app tự bóc tách mã vé, giờ bay thành timeline.<br><br>Xem offline rất tốt. | **Chỉ quản lý, không sáng tạo:** Không hỗ trợ khám phá địa điểm hay gợi ý quán ăn.<br><br>Không giúp vẽ bản đồ tuyến đường trong ngày.<br><br>Giao diện khá lỗi thời. | |
+| **3. Mindtrip AI** | [mindtrip.ai](https://mindtrip.ai) | Lên ý tưởng (Inspiration) và tự động tạo lịch trình nháp từ con số 0 thông qua AI Chat. | **Tốc độ:** Chuyển từ "không biết đi đâu" thành một lịch trình 3 ngày có ảnh, map chỉ trong 10 giây qua 1 câu chat.<br><br>Giao diện hội thoại thân thiện. | **Tính thực tế thấp:** Rủi ro AI "ảo giác" (gợi ý quán đã đóng cửa, ước tính sai thời gian di chuyển).<br><br>Rất khó để quản lý booking, mã vé thật hay chốt ngân sách chi tiết. | |
+
 
 | Nguồn / tool / case | Link | Họ giải quyết bước nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
