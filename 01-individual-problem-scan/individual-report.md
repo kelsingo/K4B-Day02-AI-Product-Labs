@@ -27,7 +27,7 @@
 | 5 | Lặp lại/AI có thể tốt hơn | Soạn hồ sơ, văn bản hành chính | Chuyên viên hành chính nhân sự, thư ký, chuyên viên pháp chế | 4–6 tiếng/bộ hồ sơ; 70–80% nội dung sử dụng lại mẫu cố định nhưng vẫn dễ sai sót do nhập tay (lỗi chính tả, sai mã/số liệu) |
 | 6 | Tốn thời gian | Lên danh sách và chuẩn bị thức ăn | Người nấu ăn cho gia đình | 2-3 tiếng |
 | 7 | AI có thể tốt hơn | Đọc bài báo khoa học phức tạp về toán | Sinh viên ngoài ngành toán | 1 tuần/bài báo|
-| 8 | | | | |
+| 8 | Pain từ người khác/AI có thể tốt hơn | Tìm thời điểm vé máy bay giá rẻ để đặt vé | travelers | canh vé liên tục trong thời gian dài (ngày/tuần/tháng)|
 | 9 | | | | |
 | 10 | | | | |
 
