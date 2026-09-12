@@ -279,41 +279,41 @@ Bài toán cần Workflow để đảm bảo các bước diễn ra theo đúng 
 Chỉ dùng Rule hoặc Workflow sẽ khó xử lý việc mỗi thành viên có nhu cầu khác nhau và việc phải tìm kiếm, so sánh nhiều lựa chọn từ các nguồn thông tin khác nhau. Tuy nhiên, không phải toàn bộ bài toán đều cần Agent; những phần có logic rõ ràng nên được giữ ở Workflow/Rule để giảm độ phức tạp và rủi ro.
 ```
 
-### 6.2. Problem Statement v1 (v0 sửa chặt hơn + 3 field cuối)
+**### 6.2. Problem Statement v1 (v0 sửa chặt hơn + 3 field cuối)**
 
 | Field | Nội dung |
 |---|---|
-| **Actor** | |
-| **Workflow** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** | |
-| **Boundary** (làm / không làm) | |
-| **AI intervention point** (can thiệp sau bước nào, trước bước nào) | |
-| **Mức chọn** (Rule / Workflow / Agent + 1 câu vì sao) | |
-| **Rủi ro & người thật kiểm tra** (rủi ro lớn nhất + ai kiểm tra bằng cách nào) | |
+| **Actor** | Nhóm bạn bè cùng lên kế hoạch và tham gia một chuyến đi, trong đó mỗi thành viên có nhu cầu, ngân sách và ưu tiên khác nhau. Một hoặc một số thành viên sẽ review và xác nhận kế hoạch trước khi đặt dịch vụ. |
+| **Workflow** | Hiện tại, từng thành viên tự tìm địa điểm trên Google, Google Maps và mạng xã hội, đưa lựa chọn vào group chat/Google Sheet, sau đó cùng ước lượng chi phí, chỉnh sửa kế hoạch và đặt dịch vụ. Sau chuyến đi, nhóm tổng hợp các khoản chi và tự tính toán để chia tiền. |
+| **Bottleneck** | Bottleneck chính là việc tìm kiếm, tổng hợp và so sánh các lựa chọn phù hợp với nhu cầu khác nhau của các thành viên, sau đó thống nhất một kế hoạch. Việc ghi nhận và tổng hợp chi phí cũng tạo thêm công việc thủ công và có thể gây nhầm lẫn. |
+| **Impact** | Nhóm mất nhiều thời gian cho việc tìm kiếm, tổng hợp thông tin và phối hợp trước chuyến đi. Thông tin phân tán và tính toán thủ công cũng làm tăng khả năng bỏ sót thông tin hoặc sai lệch khi chia tiền. |
+| **Success Metric** | Giảm tổng thời gian lập kế hoạch và số bước thủ công so với workflow hiện tại, đồng thời vẫn đảm bảo nhóm kiểm tra và xác nhận kế hoạch trước khi đặt dịch vụ. Có thể đo bằng tổng thời gian hoàn thành workflow, số bước thủ công và số lỗi cần sửa. |
+| **Boundary** (làm / không làm) | Agent **làm**: hiểu yêu cầu, tổng hợp thông tin, đề xuất kế hoạch, đề xuất backup plan và hỗ trợ tổng hợp chi phí. Agent **không tự quyết định** kế hoạch cuối cùng hoặc tự đặt dịch vụ nếu chưa có xác nhận của nhóm. |
+| **AI intervention point** (can thiệp sau bước nào, trước bước nào) | Agent can thiệp **sau khi nhóm nhập địa điểm và thời gian mong muốn**, thay thế phần tìm kiếm/tổng hợp thủ công và đưa ra một số kế hoạch. Agent tiếp tục can thiệp **sau khi nhóm review và xác nhận**, để hỗ trợ đặt dịch vụ; nếu hết chỗ thì đề xuất backup plan để nhóm xác nhận lại. |
+| **Mức chọn** (Rule / Workflow / Agent + 1 câu vì sao) | **Agent + Workflow + Rule** — Agent xử lý phần mơ hồ và nhiều lựa chọn, Workflow kiểm soát luồng, còn Rule xử lý các phần có logic rõ như validation và chia tiền. |
+| **Rủi ro & người thật kiểm tra** (rủi ro lớn nhất + ai kiểm tra bằng cách nào) | Rủi ro lớn nhất là Agent đưa thông tin sai hoặc đề xuất/đặt nhầm địa điểm, giá hoặc dịch vụ. Thành viên được phân công review sẽ kiểm tra thông tin, giá và điều kiện đặt trước khi xác nhận cho Agent thực hiện hành động. |
 
-### 6.3. Final decision
+**### 6.3. Final decision**
 
 | Câu hỏi | Yes / Not Yet / No | Ghi chú (câu đầy đủ) |
 |---|---|---|
-| Actor + workflow rõ chưa? | | |
-| Baseline + metric đo được chưa? | | |
-| Data/input đủ dùng chưa? | | |
-| AI sai, hậu quả chấp nhận được không? | | |
-| Có người review/owner không? | | |
-| Có cách non-AI đơn giản hơn không? | | |
+| Actor + workflow rõ chưa? | **Yes** | Actor là nhóm bạn bè cùng lập kế hoạch; workflow từ input nhu cầu, đề xuất, review, đặt dịch vụ đến ghi nhận và chia chi phí đã được xác định. |
+| Baseline + metric đo được chưa? | **Not Yet** | Đã xác định các metric như tổng thời gian, số bước và số bước thủ công nhưng chưa có số liệu baseline thực tế từ một chuyến đi cụ thể. |
+| Data/input đủ dùng chưa? | **Yes** | Agent có thể bắt đầu từ các input như địa điểm, thời gian, số người, ngân sách và ưu tiên của thành viên; thông tin còn thiếu có thể được hỏi bổ sung. |
+| AI sai, hậu quả chấp nhận được không? | **Yes** | Rủi ro được giới hạn bằng cách không cho Agent tự quyết định kế hoạch hoặc đặt dịch vụ trước khi nhóm review và xác nhận. |
+| Có người review/owner không? | **Yes** | Nhóm có thành viên chịu trách nhiệm review và validate kế hoạch, đặc biệt trước các hành động liên quan đến đặt dịch vụ và chi phí. |
+| Có cách non-AI đơn giản hơn không? | **Yes** | Workflow/Rule có thể xử lý các bước cố định như validation và chia tiền, nhưng không thay thế tốt phần tìm kiếm, tổng hợp và đề xuất kế hoạch có nhiều lựa chọn. |
 
 **Decision:**
 
 ```text
-[Go / Not Yet / No-Go]
+Go
 ```
 
 **Lý do (3-4 câu dựa trên bằng chứng):**
 
 ```text
-
+Bài toán có workflow rõ ràng nhưng chứa các bước có độ mơ hồ và nhiều lựa chọn, đặc biệt là tìm kiếm và xây dựng kế hoạch phù hợp với nhiều thành viên. Agent có thể giảm công việc tìm kiếm, tổng hợp và so sánh thủ công, trong khi Workflow và Rule giúp kiểm soát các bước cố định và các phép tính. Human review trước khi đặt dịch vụ tạo boundary rõ ràng và giảm hậu quả nếu AI đề xuất sai. Tuy nhiên, trước khi đánh giá hiệu quả cuối cùng cần đo baseline thực tế để xác định mức cải thiện về thời gian và số bước.
 ```
 
 **Nếu Go — pilot nhỏ nhất (data nào, chạy tay ra sao, đo 3 số nào):**
