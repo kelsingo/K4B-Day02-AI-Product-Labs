@@ -149,7 +149,7 @@ Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
 **Bottleneck chính (2-3 câu):**
 
 ```text
-
+Bottleneck chính nằm ở việc (1) nhóm tốn nghiều thời gian để lên kế hoạch, tổng hợp thông tin từ nhiều nguồn (2) nhóm phải đối soát thủ công 15–25 hóa đơn/giao dịch sau chuyến đi để xác định ai đã trả và mỗi người còn phải trả bao nhiêu. Việc này mất khoảng 1–2 tiếng, dễ xảy ra sai sót khi nhiều thành viên cùng chi trả và thường phải nhắn tin qua lại để thu hồi các khoản còn thiếu.
 ```
 
 ### 5.2. Future workflow bản nhóm
