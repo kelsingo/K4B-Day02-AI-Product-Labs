@@ -241,33 +241,42 @@ Bài toán nằm ở ô "Độ mơ hồ cao – Độ phức tạp cao" vì vừ
 
 | Mức | Phương án cho bài toán nhóm | Khi nào đủ | Rủi ro | Chọn? (Dùng cho bước nào?) |
 |---|---|---|---|---|
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **Rule** | Các rule cố định để nhận input, kiểm tra ngân sách, ghi nhận chi phí và tính số tiền mỗi người phải trả. | Khi input và logic đã rõ, ít thay đổi và có đáp án xác định. | Không xử lý tốt nhu cầu khác nhau hoặc việc tìm kiếm và lựa chọn giữa nhiều kế hoạch. | Có — dùng cho validation, tính toán chi phí và chia tiền. |
+| **Workflow** | Chuỗi bước cố định: nhận nhu cầu → tìm/đề xuất → nhóm review → xác nhận → đặt dịch vụ → ghi nhận chi phí → chia tiền. | Khi quy trình và thứ tự các bước tương đối ổn định. | Khó xử lý các trường hợp cần tìm kiếm, so sánh hoặc thay đổi kế hoạch linh hoạt. | Có — dùng làm khung chính để kiểm soát quy trình. |
+| **Agent** | Agent nhận yêu cầu tự nhiên, tổng hợp thông tin, đề xuất nhiều kế hoạch, hỗ trợ đặt dịch vụ và đưa ra backup plan khi có vấn đề. | Khi bài toán có nhiều nguồn thông tin, nhiều lựa chọn và cần suy luận theo nhu cầu của nhóm. | Có thể đề xuất sai, dùng thông tin không chính xác hoặc thực hiện hành động sai nếu không có human review. | **Có — dùng cho tìm kiếm/tổng hợp, đề xuất kế hoạch và backup plan; phải có người xác nhận trước khi đặt.** |
 
 **5 câu hỏi chốt (trả lời câu đầy đủ):**
-1. Rule có giải được 70-80% case không?
-2. Các bước có đi thẳng một đường không hay phải rẽ nhánh?
-3. Có thật sự cần Agent tự lập kế hoạch + gọi tool không?
-4. Nếu AI sai, ai phát hiện đầu tiên và sửa trong bao lâu?
-5. Có hạ được từ Agent → Workflow → Rule không?
+
+1. **Rule có giải được 70-80% case không?**  
+   Không. Rule có thể giải quyết tốt các phần có logic rõ ràng như validation, tính toán và chia tiền, nhưng không giải quyết tốt việc hiểu nhu cầu khác nhau của thành viên và lựa chọn giữa nhiều địa điểm/kế hoạch.
+
+2. **Các bước có đi thẳng một đường không hay phải rẽ nhánh?**  
+   Workflow có một luồng chính nhưng vẫn có các nhánh, ví dụ khi nhóm không đồng ý với kế hoạch hoặc khi địa điểm/khách sạn đã hết chỗ thì cần đề xuất phương án thay thế.
+
+3. **Có thật sự cần Agent tự lập kế hoạch + gọi tool không?**  
+   Có, ở mức hỗ trợ lập kế hoạch và tìm kiếm/tổng hợp thông tin vì đầu vào của nhóm có tính mơ hồ và cần kết hợp nhiều tiêu chí. Tuy nhiên Agent không nên tự quyết định kế hoạch cuối cùng hoặc tự đặt dịch vụ mà không có xác nhận của người dùng.
+
+4. **Nếu AI sai, ai phát hiện đầu tiên và sửa trong bao lâu?**  
+   Thành viên trong nhóm, đặc biệt là người chịu trách nhiệm review kế hoạch, sẽ kiểm tra thông tin và phát hiện sai trước khi đặt dịch vụ. Sai sót cần được sửa ngay trong bước review hoặc khi Agent đưa ra phương án backup.
+
+5. **Có hạ được từ Agent → Workflow → Rule không?**  
+   Có đối với một số bước. Khi các rule về ngân sách, validation, ghi nhận chi phí và chia tiền được xác định rõ, các bước này có thể hạ xuống Workflow hoặc Rule mà không cần Agent.
 
 **Mức chọn:**
 
 ```text
-[Rule / Workflow / Agent]
+[Agent + Workflow + Rule]
 ```
-
 **Vì sao chọn (3-4 câu):**
 
 ```text
-
+Bài toán cần Workflow để đảm bảo các bước diễn ra theo đúng thứ tự và kiểm soát các hành động có hậu quả thực tế. Agent phù hợp với các phần có độ mơ hồ cao như hiểu nhu cầu của nhóm, tìm kiếm/tổng hợp thông tin, đề xuất nhiều kế hoạch và xử lý backup plan. Các phần có logic xác định như validation, ghi nhận chi phí và chia tiền nên dùng Rule để giảm rủi ro và tăng tính nhất quán. Human review được đặt giữa bước đề xuất và bước đặt dịch vụ để giữ quyền quyết định cuối cùng cho nhóm.
 ```
 
 **Vì sao không chọn mức đơn giản hơn (2-3 câu):**
 
 ```text
-
+Chỉ dùng Rule hoặc Workflow sẽ khó xử lý việc mỗi thành viên có nhu cầu khác nhau và việc phải tìm kiếm, so sánh nhiều lựa chọn từ các nguồn thông tin khác nhau. Tuy nhiên, không phải toàn bộ bài toán đều cần Agent; những phần có logic rõ ràng nên được giữ ở Workflow/Rule để giảm độ phức tạp và rủi ro.
 ```
 
 ### 6.2. Problem Statement v1 (v0 sửa chặt hơn + 3 field cuối)
