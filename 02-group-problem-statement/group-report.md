@@ -6,13 +6,14 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò trong nhóm (VD: facilitator, workflow, research, writer) |
 |-----|-----------|-------------|---------------------------------------------------------------|
-| 1   |           |             |                                                               |
-| 2   |           |             |                                                               |
-| 3   |           |             |                                                               |
-| 4   |           |             |                                                               |
+| 1   | Nguyễn Phúc Huy | 2A202602911 |                                                               |
+| 2   | Tô Anh Đức | 2A202602639 |                                                               |
+| 3   | Hồ Hoàng Phương Anh | 2A202602460|                                                               |
+| 4   | Lê Văn Việt | 2A202602504 |                                                               |
+| 5   | Ngô Hoàng Thụy Khuê | 2A202603017 |                                                               |
 
 **Candidate problem nhóm chọn (1 câu):**
-
+Mỗi chuyến đi tốn khoảng 1 tháng cho việc lên kế hoạch và thường không rõ ràng trong việc quản lý chi tiêu. 
 
 ---
 
@@ -63,19 +64,24 @@
 **Candidate nhóm chọn (1 bài duy nhất):**
 
 ```text
-
+Tối ưu hoá quá trình lên kế hoạch và quản lý chuyến du lịch. 
 ```
 
 **Vì sao chọn (4-5 câu):**
 
 ```text
+- Có workflow rõ nhất.
+- Có thể research các tool/pattern có sẵn.
+- Có thể vẽ before/after rất rõ.
+- Tất cả thành viên trong nhóm đều gặp phải pain point này. 
 
 ```
 
 **Vì sao KHÔNG chọn các candidate còn lại (mỗi bài 2-3 câu):**
 
 ```text
-
+- Không nắm rõ workflow/domain.
+- Đã có nhiều giải pháp cho các vấn đề còn lại. 
 ```
 
 **Disagreement (nếu có — ai lo gì, chốt ra sao):**
@@ -92,14 +98,12 @@
 
 | Nguồn | Số người / mẫu | Tín hiệu xác nhận (kèm quote nguyên văn) | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 |---|---:|---|---|---|
-| Interview | | | | |
-| Survey / poll | | | | |
-| Log / ticket / review (nếu có) | | | | |
+| Survey / poll | 9 | 7/9 người gặp khó khăn trong việc quản lý chi tiêu, 6/8 người không dùng ứng dụng hỗ trợ việc lên kế hoạch | 1 người không gặp khó khăn trong việc quản lý chi tiêu, 4/9 người chỉ dành 1-3 tuần để lên kế hoạch |  |
 
 **Insight sau validation (1-2 câu — pain thật nằm ở đâu):**
 
 ```text
-
+Mọi người không biết một ứng dụng nào để lên kế hoạch, và có nhu cầu sử dụng nếu có ứng dụng hỗ trợ.
 ```
 
 Bằng chứng đính kèm (nếu có): `02-group-problem-statement-survey.png`, `...-interview-notes.md`
