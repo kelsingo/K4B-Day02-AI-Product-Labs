@@ -208,24 +208,33 @@ Fallback: Nếu AI đề xuất sai/thiếu thông tin → nhóm review, chỉnh
   - Định lượng mục tiêu, ví dụ: giảm **30–50% thời gian lập kế hoạch** và giảm số bước thủ công so với workflow hiện tại.
 
 ---
-
 ## Phase 6 — Rule / Workflow / Agent + Decision
 
 ### 6.0. Ma trận độ phù hợp (suy nghĩ nhanh, không thay quyết định cuối)
 
-- Độ mơ hồ: [ ] Thấp (có đúng/sai rõ) / [ ] Cao (nhiều cách trả lời vẫn OK) — Vì sao:
-- Độ phức tạp: [ ] Thấp (1-2 bước) / [ ] Cao (3+ bước/nguồn, phụ thuộc nhau) — Vì sao:
+- Độ mơ hồ: [ ] Thấp (có đúng/sai rõ) / [x] Cao (nhiều cách trả lời vẫn OK) — Vì sao: Có nhiều kế hoạch du lịch đều có thể phù hợp; lựa chọn phụ thuộc vào sở thích, ngân sách, thời gian và ưu tiên khác nhau của từng thành viên.
+
+- Độ phức tạp: [ ] Thấp (1-2 bước) / [x] Cao (3+ bước/nguồn, phụ thuộc nhau) — Vì sao: Workflow gồm nhiều bước liên kết như tìm địa điểm, so sánh lựa chọn, ước lượng chi phí, thống nhất trong nhóm, đặt dịch vụ và chia tiền; thông tin cũng đến từ nhiều nguồn.
 
 **Bài toán nhóm nằm ở ô nào:**
 
 ```text
-
+ĐỘ PHỨC TẠP
+                 Thấp          Cao
+              ┌───────────┬───────────────┐
+ Mơ hồ thấp   │ Rule       │ Workflow      │
+              ├───────────┼───────────────┤
+ Mơ hồ cao    │ Agent      │ ★ Agent +     │
+              │ hỗ trợ     │   Workflow    │
+              └───────────┴───────────────┘
+                                  ↑
+                            Bài toán nhóm
 ```
 
 **Vì sao (2-3 câu):**
 
 ```text
-
+Bài toán nằm ở ô "Độ mơ hồ cao – Độ phức tạp cao" vì vừa cần xử lý nhiều bước và nhiều nguồn thông tin, vừa không có một đáp án đúng duy nhất cho việc chọn kế hoạch. AI phù hợp để tìm kiếm, tổng hợp và đề xuất các phương án, trong khi nhóm vẫn cần review, validate và đưa ra quyết định cuối cùng trước các hành động có hậu quả thực tế như đặt dịch vụ.
 ```
 
 ### 6.1. So sánh Rule / Workflow / Agent (so trên cùng 1 bài)
