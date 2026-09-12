@@ -166,11 +166,15 @@ Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
 Phải nhìn ra 5 thứ: bước nào máy (Rule), bước nào AI, bước nào người, boundary ở đâu, fallback khi AI sai.
 
 ```text
-[1 ...: __' - máy] → [2 AI ...: __'] → [3 ... review: __' - boundary] → [4 ... gửi]
+[1 Input địa điểm + thời gian: Rule - máy]
+→ [2 AI đề xuất một vài kế hoạch: AI]
+→ [3 Nhóm review + validate + chọn kế hoạch: Người - boundary]
+→ [4 Agent gửi lệnh đặt phòng/khách sạn: AI + Rule]
+→ [5 Nếu hết chỗ → AI đề xuất backup plan: AI]
+→ [6 Sau chuyến đi → Agent chia tiền: AI + Rule]
 
-Fallback: ...
+Fallback: Nếu AI đề xuất sai/thiếu thông tin → nhóm review, chỉnh sửa hoặc chọn phương án khác trước khi đặt; nếu đặt phòng thất bại/hết chỗ → agent đề xuất backup plan và chờ nhóm xác nhận.
 ```
-
 **Before/after impact:**
 
 | Metric | Trước | Sau kỳ vọng | Cách đo |
