@@ -21,40 +21,47 @@ Mỗi chuyến đi tốn khoảng 1 tháng cho việc lên kế hoạch và thư
 
 ### 3.1. Trình bày top 3 mỗi người (mỗi candidate 1-2 phút)
 
-### 3.1. Trình bày top 3 mỗi người (mỗi candidate 1-2 phút)
+**### 3.1. Trình bày top 3 mỗi người (mỗi candidate 1-2 phút)**
 
 | # | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh của nhóm |
 |---|---|---|---|---|---|
 | 1 | Khuê | Tìm quán ăn phù hợp tại một nơi mới | Khách du lịch, người nhập cư từ xa | 2 tiếng/1 bữa ăn | Tốn thời gian |
-| 2 | Khuê | Thuê nhà tại thành phố mới | Người đi làm/Sinh viên công tác xa nhà | 1-3 tháng | Tốn thời gian/AI có thể tốt hơn |
-| 3 | Khuê | Trả lời câu hỏi nhập học của học sinh | Bộ phận tuyển sinh | 5-10 phút mỗi người | AI có thể tốt hơn |
-| 4 | Việt | Trả lời câu hỏi từ khách hàng về chính sách công ty | Nhân viên chăm sóc khách hàng | 15-20 lần/ngày | Lặp lại |
-| 5 | Việt | Soạn hồ sơ, văn bản hành chính | Chuyên viên hành chính nhân sự, thư ký, chuyên viên pháp chế | 4–6 tiếng/bộ hồ sơ; 70–80% nội dung sử dụng lại mẫu cố định nhưng vẫn dễ sai sót do nhập tay (lỗi chính tả, sai mã/số liệu) | Lặp lại/AI có thể tốt hơn |
-| 6 | Huy | Lên danh sách và chuẩn bị thức ăn | Người nấu ăn cho gia đình | 2-3 tiếng | Tốn thời gian |
+| 2 | Khuê | Thuê nhà tại thành phố mới | Người đi làm/Sinh viên công tác xa nhà | 1–3 tháng | Tốn thời gian/AI có thể tốt hơn |
+| 3 | Đức | Trả lời câu hỏi nhập học của học sinh | Bộ phận tuyển sinh | 5–10 phút mỗi người | AI có thể tốt hơn |
+| 4 | Việt | Trả lời câu hỏi từ khách hàng về chính sách công ty | Nhân viên chăm sóc khách hàng | 15–20 lần/ngày | Lặp lại |
+| 5 | Phương Anh | Soạn hồ sơ, văn bản hành chính | Chuyên viên hành chính nhân sự, thư ký, chuyên viên pháp chế | 4–6 tiếng/bộ hồ sơ; 70–80% nội dung sử dụng lại mẫu cố định nhưng vẫn dễ sai sót do nhập tay | Lặp lại/AI có thể tốt hơn |
+| 6 | Huy | Lên danh sách và chuẩn bị thức ăn | Người nấu ăn cho gia đình | 2–3 tiếng | Tốn thời gian |
 | 7 | Huy | Di chuyển giữa nhà và trường | Sinh viên | 3 tiếng/ngày | Lặp lại |
-| 8 | Huy| Quên task sau Daily Meeting | Lập trình viên | Mất thêm 15-20 phút/ngày nhắn tin qua lại | Tốn thời gian |
+| 8 | Huy | Quên task sau Daily Meeting | Lập trình viên | Mất thêm 15–20 phút/ngày nhắn tin qua lại | Tốn thời gian |
 | 9 | Đức | Hỏi đi hỏi lại các câu cơ bản | Tech Lead / HR / Admin | 30% lượng tin nhắn tag tên mỗi ngày là để trả lời các câu hỏi đã có | Lặp lại |
 | 10 | Đức | Bơi trong thông tin Workshop | Học viên / Người tham dự | Tốn 30 phút để đọc lại 50+ trang slide | AI có thể tốt hơn |
-| 11 | Phương Anh| Trả lời câu hỏi nhập học cơ bản của học sinh | Bộ phận tuyển sinh | 5-10 phút mỗi người | AI có thể tốt hơn |
+| 11 | Việt | Trả lời câu hỏi nhập học cơ bản của học sinh | Bộ phận tuyển sinh | 5–10 phút mỗi người | AI có thể tốt hơn |
 | 12 | Phương Anh | Lên kế hoạch hậu cần, chia bill và tổng hợp chi phí cho các chuyến đi nhóm/du lịch | Người đứng ra tổ chức (trip leader) và các thành viên trong nhóm | Người tổ chức phải đối soát 15–25 hóa đơn/giao dịch chuyển khoản; mất 1–2 tiếng ngồi cộng trừ, chia đầu người và giục thanh toán công nợ phát sinh sau mỗi chuyến đi | Tốn thời gian; dễ nhầm lẫn khi tổng hợp từ nhiều thành viên |
 
-
-### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)
+**### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)**
 
 | Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
-| A | | | |
-| B | | | |
-| C | | | |
-| D (nếu có) | | | |
+| A | #1, #2, #6, #7 | Các công việc lập kế hoạch/tìm kiếm có nhiều lựa chọn và tốn thời gian | Có thể dùng AI để tìm kiếm, tổng hợp và đề xuất phương án |
+| B | #3, #4, #9, #11 | Trả lời các câu hỏi lặp lại dựa trên thông tin có sẵn | Phù hợp với AI chatbot/knowledge-based workflow |
+| C | #5, #8 | Công việc hành chính hoặc quản lý task lặp lại | Có thể tự động hóa bằng Rule/Workflow, AI hỗ trợ xử lý ngôn ngữ |
+| D | #10, #12 | Tổng hợp nhiều thông tin và hỗ trợ ra quyết định | #12 nổi bật vì kết hợp nhiều bước, nhiều người và có nhu cầu phối hợp |
 
-### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)
+**### 3.3. Shortlist (giữ 2-3 bài trả lời được 7 câu hỏi worksheet)**
 
 | Candidate | Vì sao vào shortlist (2-3 ý) | Rủi ro / điều chưa rõ |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| **Lên kế hoạch hậu cần, đặt dịch vụ và chia bill cho chuyến đi nhóm (#12)** | Pain đã có evidence tương đối rõ (15–25 giao dịch, 1–2 tiếng/chuyến); workflow có nhiều bước và nhiều điểm có thể dùng AI/Workflow/Rule; nhóm đã có thể xác định Actor, bottleneck, boundary và success metric. | Cần đo baseline thực tế và xác định rõ mức độ tự động hóa cho việc đặt dịch vụ; AI có thể đưa thông tin hoặc kế hoạch sai. |
+| **Trả lời câu hỏi lặp lại về chính sách/thông tin có sẵn (#4/#9)** | Tần suất cao và workflow tương đối rõ; AI có khả năng giảm công việc lặp lại; dễ đo số câu hỏi được tự động xử lý. | Cần xác định nguồn thông tin chuẩn và cơ chế xử lý khi câu hỏi nằm ngoài knowledge base. |
+| **Soạn hồ sơ, văn bản hành chính (#5)** | Có quy trình lặp lại, nhiều nội dung có thể tái sử dụng từ template và pain về nhập liệu/sai sót đã được định lượng. | Cần xác định loại hồ sơ cụ thể và giới hạn trách nhiệm vì văn bản pháp lý/hành chính có thể có hậu quả nếu AI tạo sai. |
+
+**### 3.4. Score để đồng thuận (chấm 1-5, ép nói rõ vì sao cho 5 / cho 3)**
+
+| Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A được | Nhóm hiểu domain | Tổng |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **Lên kế hoạch hậu cần, đặt dịch vụ và chia bill cho chuyến đi nhóm (#12)** | 5 | 5 | 5 | 4 | 5 | 5 | 5 | **34/35** |
+| **Trả lời câu hỏi lặp lại về chính sách/thông tin có sẵn (#4/#9)** | 5 | 5 | 5 | 4 | 5 | 3 | 4 | **31/35** |
+| **Soạn hồ sơ, văn bản hành chính (#5)** | 4 | 5 | 5 | 5 | 4 | 4 | 3 | **30/35** |
 
 ### 3.4. Score để đồng thuận (chấm 1-5, ép nói rõ vì sao cho 5 / cho 3)
 
