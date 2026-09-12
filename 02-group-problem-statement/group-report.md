@@ -166,24 +166,26 @@ Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
 Phải nhìn ra 5 thứ: bước nào máy (Rule), bước nào AI, bước nào người, boundary ở đâu, fallback khi AI sai.
 
 ```text
-[1 Input địa điểm + thời gian: Rule - máy]
+[1 Input địa điểm + thời gian: Người - boundary]
 → [2 AI đề xuất một vài kế hoạch: AI]
 → [3 Nhóm review + validate + chọn kế hoạch: Người - boundary]
 → [4 Agent gửi lệnh đặt phòng/khách sạn: AI + Rule]
 → [5 Nếu hết chỗ → AI đề xuất backup plan: AI]
+→ [6 Trong chuyến đi, người dùng thêm thông tin về chi phí chuyến đi và người trả tiền: người - boundary]
 → [6 Sau chuyến đi → Agent chia tiền: AI + Rule]
 
 Fallback: Nếu AI đề xuất sai/thiếu thông tin → nhóm review, chỉnh sửa hoặc chọn phương án khác trước khi đặt; nếu đặt phòng thất bại/hết chỗ → agent đề xuất backup plan và chờ nhóm xác nhận.
 ```
+
 **Before/after impact:**
 
 | Metric | Trước | Sau kỳ vọng | Cách đo |
 |---|---:|---:|---|
-| Tổng thời gian | | | |
-| Số bước | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Risk mới | | | |
+| Tổng thời gian | Cao | Giảm | Tổng thời gian từ lúc bắt đầu lên kế hoạch đến khi đặt xong và hoàn tất chia tiền |
+| Số bước | 7 | 5–6 | Đếm các bước chính trong workflow |
+| Số bước thủ công | 6–7 | 2–3 | Đếm các bước cần người dùng trực tiếp tìm kiếm, tổng hợp, chỉnh sửa hoặc thực hiện |
+| Bottleneck chính | Tìm kiếm và tổng hợp địa điểm, thống nhất nhu cầu, đặt dịch vụ | Review/validate kế hoạch và xác nhận đặt | Ghi nhận bước mất nhiều thời gian nhất trong mỗi chuyến đi |
+| Risk mới | — | AI đề xuất sai, thông tin địa điểm/giá không chính xác, đặt nhầm | Số lần AI đưa thông tin sai hoặc cần người dùng sửa/hủy đề xuất |
 
 ### 5.3. Problem Statement v0 (mỗi field 2-3 câu)
 
