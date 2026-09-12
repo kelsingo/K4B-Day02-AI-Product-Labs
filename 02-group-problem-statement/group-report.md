@@ -316,7 +316,7 @@ Bài toán có workflow rõ ràng nhưng chứa các bước có độ mơ hồ 
 **Nếu Go — pilot nhỏ nhất (data nào, chạy tay ra sao, đo 3 số nào):**
 
 ```text
-
+Dùng 1 chuyến đi nhóm thực tế hoặc một kịch bản giả lập có 3–5 người, với input gồm địa điểm, thời gian, số người, ngân sách và ưu tiên của từng thành viên. Cho Agent tạo 2–3 kế hoạch, nhóm review/validate và chọn một kế hoạch; sau đó mô phỏng bước đặt dịch vụ, ghi nhận chi phí và chia bill thay vì giao quyền đặt thật. Đo 3 số: (1) tổng thời gian hoàn thành workflow, (2) số bước thủ công, (3) số lỗi/thông tin AI đưa ra cần người sửa.
 ```
 
 **Nếu Not Yet — cần validate gì trước:**
@@ -334,7 +334,7 @@ Bài toán có workflow rõ ràng nhưng chứa các bước có độ mơ hồ 
 **Exit / rollback (khi nào dừng AI, quay về cách cũ):**
 
 ```text
-
+Dừng AI và quay về workflow cũ nếu AI thường xuyên đưa thông tin sai, đề xuất không đáp ứng constraint của nhóm, hoặc thời gian review/sửa lỗi lớn hơn thời gian tự làm. Đặc biệt rollback ngay nếu có lỗi dẫn đến đặt sai dịch vụ hoặc phát sinh chi phí mà người dùng không xác nhận.
 ```
 
 ---
