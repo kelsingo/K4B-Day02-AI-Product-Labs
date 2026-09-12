@@ -144,13 +144,13 @@ Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú (handoff? bottleneck?) |
 |---|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
+| 1 | Trip leader | Nhu cầu đi du lịch của nhóm | Group chat, file Google Sheet trống | 5-10 phút / trước chuyến đi | |
+| 2 | Các thành viên | Kết quả search Google, Mạng xã hội | Danh sách các địa điểm mong muốn | 1-3 ngày | Handoff: Từng người tự cập nhật lẻ tẻ vào sheet chung. |
+| 3 | Trip leader | Danh sách địa điểm từ Bước 2 | Bảng dự toán thô | 30-60 phút | |
+| 4 | Cả nhóm | Bảng dự toán thô | Lịch trình chốt cuối cùng | 1-2 ngày | Bottleneck phụ: Chín người mười ý, tốn thời gian bàn bạc để thống nhất. |
+| 5 | Trip leader | Lịch trình chốt | Xác nhận booking (Khách sạn, xe, v.v.) | 1-2 tiếng | |
+| 6 | Trip leader | Tiền đóng góp ban đầu | Quỹ nhóm | Trước chuyến đi | |
+| 7 | Trip leader | 15-25 hóa đơn, sao kê ngân hàng | Bảng tổng kết công nợ cá nhân | 1-2 tiếng / sau chuyến đi | Bottleneck chính: Đối soát chéo thủ công. |
 
 **Bottleneck chính (2-3 câu):**
 
