@@ -108,24 +108,18 @@ Mọi người không biết một ứng dụng nào để lên kế hoạch, v�
 
 Bằng chứng đính kèm (nếu có): `02-group-problem-statement-survey.png`, `...-interview-notes.md`
 
-### 4.2. Research giải pháp đã có (ít nhất 2-3 tools/patterns + 1-2 link kiểm được)
-| Nguồn / tool / case | Link | Họ giải quyết bước nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
-|---|---|---|---|---|---|
-| **1. Wanderlog** | [wanderlog.com](https://wanderlog.com) | Lên lịch trình chi tiết, tối ưu tuyến đường trên bản đồ, cộng tác nhóm (chia sẻ quyền sửa), quản lý ngân sách. | **Trực quan:** Tích hợp map mượt, kéo thả địa điểm tự tính thời gian di chuyển.<br><br>**Cộng tác tốt:** Sửa realtime như Google Docs.<br><br>Tính năng chia tiền (Split cost) thực tế. | **Ma sát khởi đầu cao:** Người dùng vẫn phải tự nghĩ xem đi đâu, nhập tay nhiều từ đầu.<br><br>Hơi nặng và phức tạp với người chỉ cần một chuyến đi đơn giản. | |
-| **2. TripIt (by SAP)** | [tripit.com](https://www.tripit.com) | Tổng hợp và quản lý mã đặt chỗ (booking máy bay, khách sạn, tour), tạo timeline cố định. | **Tự động hóa xuất sắc:** Chỉ cần forward email (hoặc cấp quyền đọc email), app tự bóc tách mã vé, giờ bay thành timeline.<br><br>Xem offline rất tốt. | **Chỉ quản lý, không sáng tạo:** Không hỗ trợ khám phá địa điểm hay gợi ý quán ăn.<br><br>Không giúp vẽ bản đồ tuyến đường trong ngày.<br><br>Giao diện khá lỗi thời. | |
-| **3. Mindtrip AI** | [mindtrip.ai](https://mindtrip.ai) | Lên ý tưởng (Inspiration) và tự động tạo lịch trình nháp từ con số 0 thông qua AI Chat. | **Tốc độ:** Chuyển từ "không biết đi đâu" thành một lịch trình 3 ngày có ảnh, map chỉ trong 10 giây qua 1 câu chat.<br><br>Giao diện hội thoại thân thiện. | **Tính thực tế thấp:** Rủi ro AI "ảo giác" (gợi ý quán đã đóng cửa, ước tính sai thời gian di chuyển).<br><br>Rất khó để quản lý booking, mã vé thật hay chốt ngân sách chi tiết. | |
-
+**### 4.2. Research giải pháp đã có (ít nhất 2-3 tools/patterns + 1-2 link kiểm được)**
 
 | Nguồn / tool / case | Link | Họ giải quyết bước nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **1. Wanderlog** | [wanderlog.com](https://wanderlog.com) | Lập itinerary, tối ưu route, cộng tác nhóm, quản lý ngân sách/chi phí và chia bill; hiện cũng có AI Assistant hỗ trợ lập kế hoạch. :contentReference[oaicite:1]{index=1} | **Khá toàn diện:** kết hợp map, itinerary, reservations, collaboration, budgeting và expense splitting trong một app. Có thể cộng tác realtime và phân chia chi phí giữa các thành viên. :contentReference[oaicite:2]{index=2} | **Đã khá gần với ý tưởng nhóm**, nên khó cạnh tranh nếu chỉ xây một travel planner tổng quát. Workflow vẫn cần người dùng nhập/sắp xếp nhiều thông tin; AI cũng không loại bỏ hoàn toàn nhu cầu kiểm tra thông tin thực tế. | Không nên build lại toàn bộ travel planner. Nên tập trung vào **group-first workflow**: gom nhu cầu của từng thành viên → AI tạo vài phương án → nhóm review/validate → mới thực hiện booking. |
+| **2. TripIt (by SAP)** | [tripit.com](https://www.tripit.com) | Tự động tổng hợp booking từ email thành một itinerary thống nhất; quản lý flight, hotel, restaurant, transportation và chia sẻ lịch trình. :contentReference[oaicite:3]{index=3} | **Tự động hóa tốt:** người dùng chỉ cần forward confirmation email, TripIt tự tạo itinerary; hỗ trợ map, calendar sync, sharing và offline access. :contentReference[oaicite:4]{index=4} | Chủ yếu mạnh ở **organize sau khi đã booking**, không phải bài toán cùng nhau khám phá và lựa chọn kế hoạch từ đầu. Người dùng vẫn là người tìm và đặt dịch vụ. | Có thể học pattern **parse → structure → update automatically**. Với nhóm mình, receipt/booking confirmation có thể trở thành input tự động cho expense tracking và itinerary thay vì nhập tay. |
+| **3. Mindtrip AI** | [mindtrip.ai](https://mindtrip.ai) | Conversational AI để tìm địa điểm, tạo itinerary, cá nhân hóa recommendation, cộng tác với bạn bè và hỗ trợ booking/receipt management. :contentReference[oaicite:5]{index=5} | **AI + collaboration mạnh:** người dùng có thể chat để yêu cầu itinerary, mời bạn bè, cùng chỉnh sửa và yêu cầu AI cân bằng sở thích của nhóm. Có thể tổ chức booking và receipts trong cùng hệ thống. :contentReference[oaicite:6]{index=6} | Đây là đối thủ gần nhất với ý tưởng nhóm. Rủi ro chính của pattern AI travel planning vẫn là recommendation có thể cần kiểm chứng; ngoài ra sản phẩm hướng tới travel planning nói chung hơn là một workflow tối giản cho một nhóm cụ thể. | Không nên chỉ xây **“AI tạo lịch trình”** vì Mindtrip đã làm rất gần. Điểm khác biệt nên là **human-in-the-loop rõ ràng**: AI chỉ đề xuất → nhóm validate → AI mới thực hiện action; nếu booking fail thì tự chuyển sang backup plan để nhóm duyệt. |
 
 **Research takeaway (2-3 câu — nên build gì / không build gì):**
 
 ```text
-
+Không nên build thêm một travel planner tổng quát vì Wanderlog và Mindtrip đã có itinerary, collaboration, budgeting và AI planning, trong khi TripIt đã giải quyết tốt việc tự động tổng hợp booking. Nhóm nên tập trung vào workflow group-first: Agent gom nhu cầu của từng thành viên → tạo một vài phương án có trade-off rõ ràng → nhóm review/validate → Agent mới thực hiện booking và xử lý fallback; đồng thời giữ Rule cho expense tracking và chia tiền. Điểm khác biệt chính là boundary giữa AI và human decision, kết hợp giữa expense tracking và travel planner một cách hiệu quả.
 ```
 
 > Lưu ý: không dùng số liệu AI đưa nếu không verify được link chính thức. Ghi rõ giả định chưa chắc.
@@ -139,7 +133,7 @@ Bằng chứng đính kèm (nếu có): `02-group-problem-statement-survey.png`,
 Dán workflow hoặc link file: `02-group-problem-statement-workflow.png/pdf/md`
 
 ```text
-[1 ...: __' - ai làm] → [2 ...: __'] → [3 ...: __'] → [4 ... bottleneck: __'] → ...
+[1 Tạo group chat/Google Sheet: Trip members] → [2 Search + input địa điểm: Trip members] → [3 Ước lượng chi phí: Trip members] → [4 Chỉnh sửa + thống nhất lịch trình: Cả nhóm - bottleneck] → [5 Đặt dịch vụ: Trip members] → [6 Tạo quỹ chung (optional): Trip members] → [7 Chia tiền sau chuyến đi: Trip members - bottleneck]
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú (handoff? bottleneck?) |
