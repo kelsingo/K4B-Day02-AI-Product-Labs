@@ -191,16 +191,21 @@ Fallback: Nếu AI đề xuất sai/thiếu thông tin → nhóm review, chỉnh
 
 | Field | Nội dung |
 |---|---|
-| **Actor** | |
-| **Workflow** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** | |
-| **Boundary** | |
+| **Actor** | Nhóm bạn bè cùng lên kế hoạch và tham gia một chuyến đi. Mỗi thành viên có nhu cầu, ngân sách và ưu tiên khác nhau nên cần cùng đóng góp và thống nhất quyết định. |
+| **Workflow** | Hiện tại, các thành viên tự tìm địa điểm trên Google, Google Maps và mạng xã hội, sau đó nhập vào group chat/Google Sheet để cùng ước lượng chi phí, chỉnh sửa kế hoạch và đặt dịch vụ. Sau chuyến đi, nhóm còn phải tổng hợp các khoản chi và tự tính toán để chia tiền. |
+| **Bottleneck** | Việc tìm kiếm, tổng hợp và so sánh nhiều địa điểm mất thời gian, đồng thời khó đảm bảo các lựa chọn phù hợp với nhu cầu của tất cả thành viên. Việc cập nhật chi phí và chia tiền cũng dễ gây thiếu sót hoặc nhầm lẫn khi có nhiều người cùng chi trả. |
+| **Impact** | Workflow hiện tại khiến nhóm mất nhiều thời gian cho các công việc tìm kiếm, tổng hợp và phối hợp thay vì tập trung vào việc ra quyết định. Ngoài ra, thông tin phân tán và việc tính toán thủ công có thể làm tăng friction và gây tranh luận trong nhóm. |
+| **Success Metric** | Giảm tổng thời gian và số bước thủ công cần thiết để lập kế hoạch, đặt dịch vụ và chia tiền. Đồng thời, nhóm vẫn có thể review và xác nhận kế hoạch trước khi agent thực hiện các hành động có hậu quả thực tế. |
+| **Boundary** | Agent chịu trách nhiệm tìm kiếm/tổng hợp thông tin, đề xuất một số kế hoạch và hỗ trợ đặt dịch vụ, nhưng không tự quyết định kế hoạch cuối cùng thay cho nhóm. Nhóm phải review, validate và xác nhận trước khi agent thực hiện việc đặt phòng/khách sạn hoặc các hành động tương tự. |
 
 **Câu hỏi AI phản biện v0 (nếu có):**
+
 - Field nào mơ hồ:
+  - **Impact:** Chưa có số liệu cụ thể để chứng minh nhóm thực sự mất bao nhiêu thời gian.
+  - **Success Metric:** Chưa có baseline cụ thể để xác định mức giảm thời gian/số bước là bao nhiêu.
 - Tôi sửa gì:
+  - Bổ sung baseline bằng cách đo thời gian và số bước của một lần lập kế hoạch thực tế.
+  - Định lượng mục tiêu, ví dụ: giảm **30–50% thời gian lập kế hoạch** và giảm số bước thủ công so với workflow hiện tại.
 
 ---
 
