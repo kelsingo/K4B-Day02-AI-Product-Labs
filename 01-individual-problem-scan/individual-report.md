@@ -9,7 +9,8 @@
 - Vai trò / bối cảnh (VD: sinh viên năm X, intern PM, ...): Sinh viên vừa tốt nghiệp ngành Khoa học Máy tính 
 - Công việc hằng tuần (3-5 gạch đầu dòng để soi problem):
     - Đọc bài báo khoa học 
-    - 
+    - Nấu ăn 
+    - Lên thời khoá biểu và tasks cho mỗi ngày 
 
 ---
 
